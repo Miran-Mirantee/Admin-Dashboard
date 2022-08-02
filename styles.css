@@ -10,6 +10,12 @@ a {
     text-decoration: none;
 }
 
+input[type="search"] {
+    width: 500px;
+    height: 32px;
+    border-radius: 8px;
+}
+
 .sidebar {
     background-color: blue;
     display: grid;
@@ -119,8 +125,40 @@ a {
     margin: 10px;
 }
 
+.header > div {
+    padding: 0px 50px;
+}
+
 .header-top {
     background-color: darkgreen;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+}
+
+.header-top-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.icon {
+    height: 30px;
+    width: auto;
+}
+
+.avatar {
+    height: 50px;
+    width: auto;
+    background-color: orange;
+    border-radius: 90px;
 }
 
 .header-bottom {
