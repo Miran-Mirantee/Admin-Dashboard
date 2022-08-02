@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .sidebar {
     background-color: blue;
     display: grid;
@@ -14,17 +18,16 @@ body {
     padding: 10px;
 }
 
+.sidebar > a,
 .sidebar > div {
     background-color: white;
+    display: grid;
+    align-content: center;
 }
 
 .right-side {
     display: grid;
-    grid-template-rows: 1fr 5fr;
-}
-
-.header {
-    background-color: darkblue;
+    grid-template-rows: 150px 5fr;
 }
 
 .main-content {
@@ -35,12 +38,19 @@ body {
 }
 
 .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+    gap: 10px;
+}
+
+.project > div {
     background-color: pink;
 }
 
 .main-content-right {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 450px);
     gap: 10px;
 }
 
