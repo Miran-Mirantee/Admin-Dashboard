@@ -39,13 +39,38 @@ a {
 
 .project {
     display: grid;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+}
+
+.label {
+    background-color: pink;
+    display: grid;
+    align-content: center;
+
+}
+
+.project-content {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 300px;
     gap: 10px;
 }
 
-.project > div {
-    background-color: pink;
+.project-content > div {
+    background-color: purple;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.project-content-text {
+    background-color: darkorchid;
+}
+
+.project-content-btn-panel {
+    background-color: burlywood;
 }
 
 .main-content-right {
@@ -56,10 +81,36 @@ a {
 
 .announcements {
     background-color: red;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+}
+
+.announcements-content {
+    display: grid;
+    grid-auto-rows: 1fr;
+    gap: 10px;
+}
+
+.announcements-content > div {
+    background-color: darkred;
 }
 
 .trending {
     background-color: violet;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+}
+
+.trending-content {
+    display: grid;
+    grid-auto-rows: 1fr;
+    gap: 10px;
+}
+
+.trending-content > div {
+    background-color: darkviolet;
 }
 
 .header {
