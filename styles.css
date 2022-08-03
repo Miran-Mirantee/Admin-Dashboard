@@ -148,6 +148,16 @@ input[type="search"] {
 
 .trending-content > div {
     background-color: darkviolet;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+}
+
+.trending-content > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .header {
@@ -214,7 +224,6 @@ input[type="search"] {
 .header-bottom-left > div {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .header-bottom-right {
