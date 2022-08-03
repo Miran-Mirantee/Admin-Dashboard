@@ -51,7 +51,7 @@ input[type="search"] {
 
 .main-content {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr 350px;
     margin: 10px;
     gap: 10px;
 }
@@ -66,7 +66,6 @@ input[type="search"] {
     background-color: pink;
     display: grid;
     align-content: center;
-
 }
 
 .project-content {
@@ -82,6 +81,10 @@ input[type="search"] {
     flex-direction: column;
     gap: 5px;
     padding: 40px 25px;
+}
+
+.project-content-header {
+
 }
 
 .project-content-text {
@@ -117,6 +120,17 @@ input[type="search"] {
 
 .announcements-content > div {
     background-color: darkred;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+}
+
+.announcements-content-header {
+
+}
+
+.announcements-content-text {
+    flex-grow: 1;
 }
 
 .trending {
