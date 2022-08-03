@@ -28,7 +28,20 @@ input[type="search"] {
 .sidebar > div {
     background-color: white;
     display: grid;
-    align-content: center;
+    grid-template-columns: 80px 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-items: stretch;
+    padding: 10px;
+}
+
+.sidebar > div ~ div {
+    background-color: transparent;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
 }
 
 .right-side {
