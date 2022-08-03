@@ -131,8 +131,7 @@ input[type="search"] {
 
 .header-top {
     background-color: darkgreen;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    display: flex;
     gap: 30px;
 }
 
@@ -143,6 +142,7 @@ input[type="search"] {
 }
 
 .header-top-right {
+    margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -155,7 +155,14 @@ input[type="search"] {
 }
 
 .avatar {
-    height: 50px;
+    height: 45px;
+    width: auto;
+    background-color: orange;
+    border-radius: 90px;
+}
+
+.avatar-big {
+    height: 60px;
     width: auto;
     background-color: orange;
     border-radius: 90px;
@@ -163,4 +170,31 @@ input[type="search"] {
 
 .header-bottom {
     background-color: green;
+    display: flex;
+    gap: 30px;
+}
+
+.header-bottom-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-bottom-left > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-bottom-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 12px;
+    border-style: none;
 }
