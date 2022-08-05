@@ -59,6 +59,7 @@ input:focus {
     grid-template-columns: 80px 1fr;
     gap: 10px;
     align-items: center;
+    align-content: center;
     justify-items: stretch;
     padding: 10px;
     font-size: 1.5rem;
@@ -121,6 +122,12 @@ input:focus {
     border-radius: 16px;
 }
 
+.project-content > div,
+.announcements-content,
+.trending-content {
+    box-shadow: 6px 6px 6px 1px #fb7185;
+}
+
 .project-content-header {
     font-weight: bold;
     font-size: 1.5rem;
@@ -153,6 +160,7 @@ input:focus {
 .announcements-content {
     background-color: #fff1f2;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr;
     padding: 25px 25px;
     border-radius: 16px;
@@ -166,7 +174,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     border-radius: 16px;
-    padding: 8px;
+    padding: 16px;
 }
 
 .announcements-content-item:hover {
@@ -229,6 +237,7 @@ input:focus {
     display: grid;
     grid-template-rows: 4fr 5fr;
     background-color: #fff1f2;
+    box-shadow: 6px -6px 12px 6px #fb7185;
 }
 
 .header > div {
